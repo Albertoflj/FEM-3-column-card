@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+@include breakpoint-down(small){
+    body{
+        flex-direction: column;
+    }
+}
+.flex{
+    display: flex;
+    &-fd-c{
+        flex-direction: column;
+    }
+    &-fd-r{
+        flex-direction: row;
+    }
+    &-ai-c{
+        align-items: center;
+    }
+    &-jc-c{
+        justify-content: center;
+    }
+}

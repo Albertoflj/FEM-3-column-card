@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 53.75rem) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-fd-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-fd-r {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-component {
+  max-width: 920px;
+  width: 100%;
+  max-height: 500px;
+  height: 100%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cat {
+  width: 33.33%;
+  height: 100%;
+}
+
+.cat h1 {
+  font-size: 32px;
+  color: #f2f2f2;
+  margin: 32px 0px 40px 0px;
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.cat p {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 0;
+}
+
+.cat button {
+  margin-top: 86px;
+  font-family: 'Lexend Deca', sans-serif;
+  border: 0px;
+  color: #e38826;
+  background-color: #f2f2f2;
+  max-width: 146px;
+  max-height: 48px;
+  width: 100%;
+  height: 48px;
+  border-radius: 30px;
+  -webkit-transition: 100ms all;
+  transition: 100ms all;
+}
+
+.cat button:hover {
+  background-color: transparent;
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+@media (max-width: 53.75rem) {
+  body {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .main-component {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 24px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cat {
+    width: 100%;
+    max-width: none;
+  }
+  .cat button {
+    margin-top: 30px;
+  }
+}
+
+.content {
+  margin: 48px;
+}
+
+.sedans {
+  background-color: #e38826;
+}
+
+.suvs {
+  background-color: #006970;
+}
+
+.suvs button {
+  color: #006970;
+}
+
+.luxury {
+  background-color: #004241;
+}
+
+.luxury button {
+  color: #004241;
+}
+/*# sourceMappingURL=main.css.map */
